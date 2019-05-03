@@ -49,3 +49,6 @@ subplot(2,1,2)
 imagesc(time,freq1,RAD1);set(gca,'YDir','Normal');title('RAD1')
 xlabel('Time (UT (hh))','FontSize',14)
 ylabel('Frequency (kHz)','FontSize',14)
+
+saveas(gcf,strcat(file,'.png'))
+saveas(gcf,[file '.fig'])
